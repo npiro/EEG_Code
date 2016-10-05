@@ -3,20 +3,21 @@
 
 # In[36]:
 
-get_ipython().magic('matplotlib inline')
+#get_ipython().magic('matplotlib inline')
 import scipy.io
 from os.path import join
 import glob
 from matplotlib.pyplot import *
 import seaborn
 import numpy as np
-folder = '../Data/train_1/'
+folderNico = '/Users/piromast/Documents/Kaggle/EEG/Data/train_1/'
+folder = folderNico
 files = glob.glob(join(folder,'1_*_1.mat'))
 
 
 # In[37]:
 
-sortedfiles = sorted(files, key=lambda name: int(name[18:-6]))
+sortedfiles = sorted(files, key=lambda name: int(name[len(folder)+2:-6]))
 
 
 # In[39]:
