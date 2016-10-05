@@ -10,6 +10,10 @@ import scipy.io
 import numpy as np
 
 def load_trace(folder = '/Users/piromast/Documents/Kaggle/EEG/Data/train_1/', patient_index = 1, hour_index = 1, state = 'preictal'):
+"""
+Loads a data trace corresponding to patient_index, at hour hour_index
+with specified state ('preictal' for seizure and 'normal' for normal)
+"""    
     if state == 'preictal': K = 1
     else: K = 0
     
