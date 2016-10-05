@@ -34,7 +34,7 @@ data = np.array(data)
 
 # In[40]:
 
-plot(data[:,0])
+plot(data[1:1000,1:5])
 
 
 # In[ ]:
